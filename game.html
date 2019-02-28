@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Fast Hand Battle!</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">        
+        <link rel="stylesheet" href="css/game.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body bg-primary">
+                            <h6 class="text-uppercase">Player 1</h6>
+                            <h1 id="score1" class="float-right">0</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6 py-2">
+                </div>
+                <div class="col-xl-2 col-sm-6 py-2">
+                    <div class="card bg-success text-white">
+                        <div class="card-body bg-success">
+                            <h3 class="text-uppercase d-flex justify-content-center">Time</h3>
+                            <h3 id="jam" class="d-flex justify-content-center">Start</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6 py-2">
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body">
+                            <h6 class="text-uppercase">Player 2</h6>
+                            <h1 id="score2" class="float-right">0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container"></div>
+            <div id="superpower" class="row">
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body bg-primary">
+                            <h6 class="text-uppercase">Super Power</h6>
+                            <h3 id="super1" class="float-right">Cooldown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card bg-success text-white">
+                        <div class="card-body bg-success">
+                            <h6 class="text-uppercase">Player 1 Attack</h6>
+                            <h3 class="float-right">Press D</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card bg-success text-white">
+                        <div class="card-body bg-success">
+                            <h6 class="text-uppercase">Player 2 Attack</h6>
+                            <h3 class="float-right">Press <=</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body">
+                            <h6 class="text-uppercase">Super Power</h6>
+                            <h3 id="super2" class="float-right">Cooldown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="ac-wrapper">
+                    <div id="popup">
+                        <center>
+                        <h4>FAST HAND BATTLE!</h4><br>
+                        <p>Bermainlah secara multiplayer untuk mendapatkan pengalaman bermain terbaik!<br><h3>Peringatan!</h3><br>Bermain terlalu sering dapat mengancam nyawa keyboard anda :V</p>
+                        <input class="btn btn-danger btn-lg" type="button" name="submit" value="PLAY" onclick="btnStart()">
+                        </center>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+        <script src="js/game.js"></script>
+    </body>
+</html>
